@@ -20,10 +20,10 @@
       echo "Connection passed!";
 
     //insert data into user table
-    $sql = "INSERT INTO $table(CURRENT_TIME(),Name,Likes,Comments,Rating)  VALUES ('$name','$likes', '$comments', '$rating')";
+    $sql = "INSERT INTO $table(Timestamp,Name,Likes,Comments,Rating) VALUES (CURRENT_TIME(),'$name','$likes', '$comments', '$rating')";
 
     //execute sql
-    $query_result = $conn->query($sq)
+    $query_result = $conn->query($sql)
         or die ("SQL Error: Data Insert is No Bueno!");
 
     //call the user table 
@@ -47,7 +47,7 @@
         }
          echo "</tr>\n"; 
     }
-    $result->free();
+    //$result->free();
     $conn->close();
 
 ?>
