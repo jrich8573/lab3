@@ -7,6 +7,11 @@
         <input type ="radio" name="likes" value="1"> Yes 
         <input type ="radio" name="likes" value="0"> No 
         <br>
+        <style type='text/css'>
+            textarea {<!-- w  w w.  j a v  a  2  s .c  o m-->
+            vertical-align: center;
+            }
+        </style>
         Comments:
         <textarea  row="4" cols="20" name="comments"></textarea>
         <br>
