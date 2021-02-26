@@ -24,7 +24,7 @@
     // connection string
     	$server = 'mysql-class.infra.cs.odu.edu';
 	$sqlUsername = "jrich202020";
-	$sqlPassword = "This15Dumb@21";
+	$sqlPassword = $_ENV["MYPW"]; //from environment var source
 	$databaseName = 'jrich202020db';
     	$table = 'USERS';
 
