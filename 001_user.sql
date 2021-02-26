@@ -1,6 +1,7 @@
 CREATE TABLE users(
-	username varchar(10)
-       ,likes varchar(1)
-       ,comments varchar(20)
-       ,rating varchar(1)
+	Timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+       ,Name varchar(10)
+       ,Likes varchar(1)
+       ,Comments varchar(20)
+       ,Rating varchar(1)
 );
