@@ -1,11 +1,11 @@
 <?php
 
-    $userName=$_POST["username"];
-    echo "Hello <b>$userName<b>!<br>";
+    $userName=$_POST["name"];
+    echo "Hello <b>$name<b>!<br>";
 
 
     // connection string
-    $server = 'imysql-class.infra.cs.odu.edu';
+    $server = 'mysql-class.infra.cs.odu.edu';
 	$sqlUsername = 'jrich202020';
 	$sqlPassword = $_ENV["MYPW"];
 	$databaseName = 'jrich202020db';
