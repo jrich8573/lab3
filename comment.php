@@ -11,10 +11,10 @@
             textarea {vertical-align: top;
             }
         </style>
-        <label for="comments">Comments:</label>
-        <textarea  row="5" id="comments" name="comments"></textarea>
+        <label for="notes">Comments:</label>
+        <textarea  row="5" id="notes" name="notes"></textarea>
         <br>
-        <select name='rating' size = 1>
+        <select name='ratings' size = 1>
 	        <option value='1'>1</option> 
 	        <option value='2'>2</option>
         	<option value='3'>3</option> 
