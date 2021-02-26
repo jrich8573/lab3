@@ -4,10 +4,13 @@
         <input type = "text" name ="username" vaule =""/>
         <br>
         Do you like this page? 
-        <input type ="radio" name="like" value="1"> Yes 
-        <input type ="radio" name="like" value="0"> No 
+        <input type ="radio" name="likes" value="1"> Yes 
+        <input type ="radio" name="likes" value="0"> No 
         <br>
-        <select name= 'StudentID' size = 1>
+        Comments:
+        <textarea rows="4" cols="50" name="comments"></textarea>
+        <br>
+        <select name= 'rating' size = 1>
 	        <option value='1'>1</option> 
 	        <option value='2'>2</option>
         	<option value='3'>3</option> 

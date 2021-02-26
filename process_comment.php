@@ -9,6 +9,7 @@
 	$sqlUsername = 'jrich202020';
 	$sqlPassword = $_ENV["MYPW"];
 	$databaseName = 'jrich202020db';
+    $table = 'users';
 
 	$con = new mysqli($server, $sqlUsername, $sqlPassword);
 
@@ -19,7 +20,7 @@
       echo "Connection passed!";
 
     //insert data into user table
-    $sql = "INSERT INTO $table(CURRENT_TIME(),Name,Likes,Comments, Rating)  VALUES ('$name','$likes', '$comments', '$rating')";
+    $sql = "INSERT INTO $table(CURRENT_TIME(),Name,Likes,Comments,Rating)  VALUES ('$name','$likes', '$comments', '$rating')";
 
     //execute sql
     $query_result = $conn->query($sq)
