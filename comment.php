@@ -8,7 +8,7 @@
         <input type ="radio" name="likes" value="0"> No 
         <br>
         <style type='text/css'>
-            textarea {vertical-align: center;
+            textarea {vertical-align: top;
             }
         </style>
         <label for="comments">Comments:</label>
