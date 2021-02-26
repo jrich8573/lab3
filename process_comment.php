@@ -48,6 +48,6 @@
          echo "</tr>\n"; 
     }
     //$result->free();
-    $conn->close();
+    //$conn->close();
 
 ?>
