@@ -1,15 +1,15 @@
 <?php
 
-    $userName=$_POST["username"];
-    echo "Hello <b>$userName<b>!<br>";
+    $name=$_POST["name"];
+    echo "Hello <b>$name<b>!<br>";
 
 
     // connection string
-    $server = 'imysql-class.infra.cs.odu.edu';
-	$sqlUsername = 'jrich202020';
+    	$server = 'mysql-class.infra.cs.odu.edu';
+	$sqlUsername = "jrich202020";
 	$sqlPassword = $_ENV["MYPW"];
 	$databaseName = 'jrich202020db';
-    $table = 'users';
+    	//$table = 'users';
 
 	$con = new mysqli($server, $sqlUsername, $sqlPassword);
 
@@ -20,14 +20,14 @@
       echo "Connection passed!";
 
     //insert data into user table
-    $sql = "INSERT INTO $table(Timestamp,Name,Likes,Comments,Rating) VALUES (CURRENT_TIME(),'$name','$likes', '$comments', '$rating')";
+    $insert_sql = "INSERT INTO USERS(Timestamp,Name,Likes,Comments,Rating) VALUES (CURRENT_TIME(),'$name','$likes', '$comments', '$rating')";
 
     //execute sql
-    $query_result = $conn->query($sql)
+    $query_result = $conn->query($insert_sql)
         or die ("SQL Error: Data Insert is No Bueno!");
 
     //call the user table 
-    $sql = "SELECT * FROM $table";
+    $sql = "SELECT * FROM USERS";
     echo "Query: ".$sql."<br>";
     $result = $conn->query($sql)
         or die("ERROR: Query is No Bueno!");

@@ -1,4 +1,4 @@
-CREATE TABLE users(
+CREATE TABLE USERS(
 	Timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
        ,Name varchar(10)
        ,Likes varchar(1)
