@@ -8,7 +8,9 @@
         <input type ="radio" name="likes" value="0"> No 
         <br>
         Comments:
-        <textarea  cols="50" name="comments"></textarea>
+        <div>
+            <textarea  cols="50" name="comments"></textarea>
+        </div>
         <br>
         <select name='rating' size = 1>
 	        <option value='1'>1</option> 
