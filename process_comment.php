@@ -19,7 +19,7 @@
       echo "Connection passed!";
 
     //insert data into user table
-    $sql = "INSERT INTO $table VALUES (NULL'$username','$likes', '$comments', '$rating')";
+    $sql = "INSERT INTO $table(CURRENT_TIME(),Name,Likes,Comments, Rating)  VALUES ('$name','$likes', '$comments', '$rating')";
 
     //execute sql
     $query_result = $conn->query($sq)
