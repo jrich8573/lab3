@@ -17,14 +17,18 @@
 	if($conn-> connection_error){
 			die("Connection failed: " .$conn->connect_error);
 	}
-      echo "Connection passed!";
+      //echo "Connection passed!";
 
     //insert data into user table
-    $insert_sql = "INSERT INTO USERS(Timestamp,Name,Likes,Comments,Rating) VALUES (CURRENT_TIME(),'$name','$likes', '$comments', '$rating')";
+    $sql = "INSERT INTO USERS(Timestamp,Name,Likes,Comments,Rating) VALUES (CURRENT_TIME(),'$name','$likes', '$comments', '$rating')";
 
     //execute sql
-    $query_result = $conn->query($insert_sql)
-        or die ("SQL Error: Data Insert is No Bueno!");
+    if($conn->query($sql) == TRUE){
+        echo "New record create in table users";
+    } else{
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+    $conn->close();;
 
     //call the user table 
     $sql = "SELECT * FROM USERS";
@@ -48,6 +52,6 @@
          echo "</tr>\n"; 
     }
     //$result->free();
-    //$conn->close();
+    $conn->close();
 
 ?>
