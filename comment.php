@@ -6,8 +6,8 @@
         Do you like this page? 
         <input type ="radio" name="likes" value="1"> Yes 
         <input type ="radio" name="likes" value="0"> No 
-        Comments:
         <br>
+        Comments:
         <textarea  row="4" cols="50" name="comments"></textarea>
         <br>
         <select name='rating' size = 1>
