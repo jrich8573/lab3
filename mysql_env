@@ -1,0 +1,16 @@
+# To run this script, run the following
+# source source-ora-pw
+
+# This script asks for the users oracle password
+# reads it silently into RAM, and exports it to an
+# environment variable
+
+
+# ask for user input
+echo "Enter your ODU MYSQL password: "
+
+# store password in RAM
+read -s MYPW
+
+# export password session only environment variable
+export MYPW

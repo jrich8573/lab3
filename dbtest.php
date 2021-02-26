@@ -1,9 +1,9 @@
 <?php
 	
-	$server = 'imysql-class.infra.cs.odu.edu'
-	$sqlUsername = 'jrich202020'
-	$sqlPassword = ''
-	$databaseName = 'jrich202020db'
+	$server = 'imysql-class.infra.cs.odu.edu';
+	$sqlUsername = 'jrich202020';
+	$sqlPassword = $_ENV["MYPW"];
+	$databaseName = 'jrich202020db';
 
 	$con = new mysqli($server, $sqlUsername, $sqlPassword);
 
